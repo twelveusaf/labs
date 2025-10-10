@@ -1,0 +1,140 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+  background: rgb(58, 58, 58);
+  font: normal 100%/1.5 monospace;
+}
+
+h1 {
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+
+p {
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+
+a {
+  padding: 4px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+
+label {
+  padding: 4px;
+  font: inherit;
+}
+
+select {
+  width: 90px;
+  height: 25.2px;
+  appearance: none;
+  font: inherit;
+  color: rgb(0, 0, 0);
+  caret-color: rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
+}
+
+input {
+  width: 284.5px;
+  appearance: none;
+  box-sizing: border-box;
+  font: inherit;
+  color: rgb(0, 0, 0);
+  caret-color: rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
+}
+
+#body {
+  margin: 0 auto;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  background: rgb(58, 58, 58);
+  font: normal 100%/1.5 monospace;
+}
+
+#app {
+  padding: 20px;
+  max-width: 414px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(180, 180, 180);
+  border: 2px outset rgb(218, 218, 218);
+}
+
+#footer {
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#dropdown {
+  padding: 0px;
+  margin-right: -8px;
+  position: relative;
+  display: inline-block;
+}
+
+#container {
+  background: rgba(0, 0, 0, 0.288);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+#container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
+  animation: shine 3s;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+
+  50% {
+    left: 100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
