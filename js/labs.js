@@ -2,6 +2,8 @@ let pt_age;
 let pt_sex;
 let pcm_labs;
 let req_labs = [];
+let filtered_array = [];
+
 const pcm = document.getElementById('pcm');
 const age = document.getElementById('age');
 const sex = document.getElementById('gender');
@@ -81,12 +83,14 @@ function performSearch() {
         req_labs.push("Patient is not required to complete any Annual Labs until the age of 35; unless provider advised otherwise.")
     }
     
-
     const unique_array = [...new Set(req_labs)];
-    let filtered_array = unique_array.filter(function (e) { return e; });
+    filtered_array = unique_array.filter(function (e) { return e; });
     output.innerHTML = `${filtered_array.join(', ')}`;
     
     console.log("Age: ", pt_age);
     console.log("Gender: ", pt_sex);
     console.log(filtered_array);
+
+    req_labs = [];
+    unique_array = [];
 }
