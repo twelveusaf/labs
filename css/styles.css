@@ -38,6 +38,35 @@ a:active {
   color: rgb(255, 255, 255);
 }
 
+table {
+  margin: 5px;
+  text-align: center;
+}
+
+
+th, td {
+  padding: 2px 2px;
+}
+
+tr.detail-row {
+  display: none;
+  text-align: justify;
+  background: rgb(0, 22, 54);
+}
+
+tr.main-row[aria-expanded="true"]+tr.detail-row {
+  display: table-row;
+}
+
+tr.main-row {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+tr.main-row:hover {
+  background: rgb(4, 28, 65);
+}
+
 #body {
   margin: 0 auto;
   text-align: start;
