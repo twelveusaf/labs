@@ -59,12 +59,21 @@ let pt_age, pt_sex, pcm_labs, pcm_labs_x;
 let req_labs = [], filtered_array = [];
 
 const pcm_pref_baseline_labs = {
-    aa: ["Dr. AA (Placeholder)", "A1c", "Lipid Panel"],
-    ab: ["Dr. AB (Placeholder)", "A1c", "Lipid Panel"],
-    ac: ["Dr. AC (Placeholder)", "A1c", "Lipid Panel"],
-    ad: ["Dr. AD (Placeholder)", "A1c", "Lipid Panel", "BMP"],
-    ae: ["Dr. AE (Placeholder)", "A1c", "Lipid Panel", "BMP"],
-    af: ["Dr. AF (Placeholder)", "A1c", "Lipid Panel", "CMP", "CBC", "TSH"],
+    aa: ["Dr. Whitmarsh", "A1c", "Lipid Panel", "CMP", "CBC", "TSH"],
+    ab: ["Dr. Caulkins", "A1c", "Lipid Panel"],
+    ac: ["Dr. Williams", "A1c", "Lipid Panel"],
+    ad: ["Dr. Archuleta", "A1c", "Lipid Panel"],
+    ae: ["Dr. Torres", "A1c", "Lipid Panel", "CMP", "CBC", "TSH"],
+    af: ["NP. Moore", "A1c", "Lipid Panel", "CMP", "CBC", "TSH"],
+    ag: ["NP. Gazaway", "A1c", "Lipid Panel"],
+    ah: ["NP. Kennedy", "A1c", "Lipid Panel"],
+    ai: ["NP. Royse", "A1c", "Lipid Panel"],
+    aj: ["PA. Clay", "A1c", "Lipid Panel", "CMP", "CBC", "TSH"],
+    ak: ["PA. Shuty", "A1c", "Lipid Panel", "CMP", "CBC", "TSH"],
+    al: ["PA. Moore", "A1c", "Lipid Panel"],
+    am: ["PA. Van Hoosen", "A1c", "Lipid Panel", "CMP", "CBC", "TSH"],
+    an: ["PA. Moore", "A1c", "Lipid Panel", "BMP"],
+    ao: ["PA. Clauson", "A1c", "Lipid Panel", "BMP"],
 };
 
 pcm.innerHTML += Object.entries(pcm_pref_baseline_labs).map(([key, value]) => `<option value="${key}">${value[0]}</option>`).join('');
